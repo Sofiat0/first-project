@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FinTrack Dashboard</title>
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+       
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span class="logo-icon">●</span>
+                <span>FinTrack</span>
+            </div>
+
+
+            
+            <nav class="sidebar-nav">
+
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">▣</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">☷</span>
+                    <span>Transactions</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">♧</span>
+                    <span>Savings</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">⚙</span>
+                    <span>Settings</span>
+                </a>
+
+            </nav>
+
+
+           
+            <div class="sidebar-profile">
+
+                <div class="profile-avatar">
+                    SJ
+                </div>
+
+                <div class="profile-info">
+                    <strong>Sarah James</strong>
+                    <span>Student Account</span>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+       
+
+        <main class="main-content">
+
+          
+
+            <header class="dashboard-header">
+
+                <div>
+                    <h1>Good morning, Sarah 👋</h1>
+
+                    <p>
+                        Here is an overview of your finances.
+                    </p>
+                </div>
+
+
+                <button
+                    class="add-transaction-btn"
+                    id="openModal"
+                >
+                    + Add Transaction
+                </button>
+
+            </header>
+
+
+           
+
+            <section class="summary-cards">
+
+                
+
+                <div class="card">
+
+                    <span class="card-label">
+                        Total Balance
+                    </span>
+
+                    <strong class="card-value">
+                        ₦125,500
+                    </strong>
+
+                </div>
+
+
+               
+                <div class="card">
+
+                    <span class="card-label">
+                        Total Income
+                    </span>
+
+                    <strong class="card-value income">
+                        ₦180,000
+                    </strong>
+
+                </div>
+
+
+               
+
+                <div class="card">
+
+                    <span class="card-label">
+                        Total Expenses
+                    </span>
+
+                    <strong class="card-value expense">
+                        ₦54,500
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+          
+            <section class="content-grid">
+
+
+              
+
+                <div class="transactions">
+
+                    <div class="section-heading">
+
+                        <h2>
+                            Recent Transactions
+                        </h2>
+
+                        <a
+                            href="#"
+                            class="view-all"
+                        >
+                            View All
+                        </a>
+
+                    </div>
+
+
+                    
+
+                    <div class="transaction-item">
+
+                        <div class="transaction-icon">
+                            💼
+                        </div>
+
+                        <div class="transaction-details">
+
+                            <strong>
+                                Freelance Payment
+                            </strong>
+
+                            <span>
+                                May 12, 2025 • Income
+                            </span>
+
+                        </div>
+
+                        <div class="transaction-amount income">
+                            +₦80,000
+                        </div>
+
+                    </div>
+
+
+                    
+
+                    <div class="transaction-item">
+
+                        <div class="transaction-icon">
+                            🛒
+                        
+                        </div>
+
+                        <div class="transaction-details">
+
+                            <strong>
+                                Groceries
+                            </strong>
+
+                            <span>
+                                May 11, 2025 • Food
+                            </span>
+
+                        </div>
+
+                        <div class="transaction-amount expense">
+                            -₦15,500
+                        </div>
+
+                    </div>
+
+
+                   
+                    <div class="transaction-item">
+
+                        <div class="transaction-icon">
+                            💰
+                        </div>
+
+                        <div class="transaction-details">
+
+                            <strong>
+                                Monthly Allowance
+                            </strong>
+
+                            <span>
+                                May 10, 2025 • Income
+                            </span>
+
+                        </div>
+
+                        <div class="transaction-amount income">
+                            +₦100,000
+                        </div>
+
+                    </div>
+
+
+                    
+
+                    <div class="transaction-item">
+
+                        <div class="transaction-icon">
+                            📶
+                        </div>
+
+                        <div class="transaction-details">
+
+                            <strong>
+                                Internet Subscription
+                            </strong>
+
+                            <span>
+                                May 08, 2025 • Bills
+                            </span>
+
+                        </div>
+
+                        <div class="transaction-amount expense">
+                            -₦12,000
+                        </div>
+
+                    </div>
+
+
+                   
+
+                    <div class="transaction-item">
+
+                        <div class="transaction-icon">
+                            🚘
+                        </div>
+
+                        <div class="transaction-details">
+
+                            <strong>
+                                Transport
+                            </strong>
+
+                            <span>
+                                May 07, 2025 • Travel
+                            </span>
+
+                        </div>
+
+                        <div class="transaction-amount expense">
+                            -₦7,000
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+               
+
+                <div class="savings">
+
+                    <h2>
+                        Laptop Savings
+                    </h2>
+
+
+                    <p class="savings-description">
+                        Savings goal progress for new machine.
+                    </p>
+
+
+                    <div class="savings-values">
+
+                        <div>
+
+                            <span>
+                                Saved Amount
+                            </span>
+
+                            <strong>
+                                ₦75,000
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Target Goal
+                            </span>
+
+                            <strong>
+                                ₦150,000
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                  
+
+                    <div class="progress-bar">
+
+                        <div class="progress-fill"></div>
+
+                    </div>
+
+
+                    <div class="progress-info">
+
+                        <span>
+                            50% Completed
+                        </span>
+
+                        <span>
+                            ₦75,000 remaining
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+
+    <div
+        class="modal-overlay"
+        id="transactionModal"
+    >
+
+        <div class="modal">
+
+
+           
+
+            <div class="modal-header">
+
+                <div>
+
+                    <h2>
+                        Add New Transaction
+                    </h2>
+
+                    <p>
+                        Record a new income or expense.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="close-modal"
+                    id="closeModal"
+                    type="button"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+          
+
+            <form id="transactionForm">
+
+
+               
+
+                <div class="form-group">
+
+                    <label for="transactionTitle">
+                        Transaction Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="transactionTitle"
+                        placeholder="e.g. Groceries"
+                        required
+                    >
+
+                </div>
+
+
+               
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="transactionType">
+                            Type
+                        </label>
+
+                        <select id="transactionType">
+
+                            <option value="income">
+                                Income
+                            </option>
+
+                            <option value="expense">
+                                Expense
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="transactionCategory">
+                            Category
+                        </label>
+
+                        <select id="transactionCategory">
+
+                            <option value="food">
+                                Food
+                            </option>
+
+                            <option value="bills">
+                                Bills
+                            </option>
+
+                            <option value="transport">
+                                Transport
+                            </option>
+
+                            <option value="shopping">
+                                Shopping
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="transactionAmount">
+                            Amount
+                        </label>
+
+                        <input
+                            type="number"
+                            id="transactionAmount"
+                            placeholder="0.00"
+                            min="0"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="transactionDate">
+                            Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="transactionDate"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                
+
+                <div class="modal-actions">
+
+                    <button
+                        type="button"
+                        class="cancel-btn"
+                        id="cancelModal"
+                    >
+                        Cancel
+                    </button>
+
+
+                    <button
+                        type="submit"
+                        class="save-btn"
+                    >
+                        Save Transaction
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
